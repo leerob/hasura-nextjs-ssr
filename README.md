@@ -1,30 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hasura Next.js SSR
 
-## Getting Started
+This example uses [Hasura](https://hasura.io/), [Next.js](https://nextjs.org/), and [graphql-request](https://github.com/prisma-labs/graphql-request) to fetch data from a GraphQL API and render server-side.
 
-First, run the development server:
+## Create Your Own
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+1. Create your own GraphQL API with [Hasura](https://cloud.hasura.io/).
+   ![image](https://user-images.githubusercontent.com/9113740/89105409-82494480-d3e6-11ea-8898-55f4f05db9c4.png)
+1. Inside the console, create a new schema and add some data.
+   ![image](https://user-images.githubusercontent.com/9113740/89105413-8d03d980-d3e6-11ea-8e6f-6d616fe3da0f.png)
+1. Optional: [Secure your API endpoint.](https://hasura.io/docs/1.0/graphql/manual/deployment/securing-graphql-endpoint.html)
+   ![image](https://user-images.githubusercontent.com/9113740/89105407-76f61900-d3e6-11ea-9f5e-d989515154a7.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running Locally
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. Install dependencies by running `yarn` or `npm install`.
+1. Create an `.env.local` file.
+1. Populate `HASURA_API_URL`.
+1. Optional: Populate `HASURA_ADMIN_SECRET`.
+1. Run `yarn dev` or `npm run dev` to start the application at [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+Deploy this project in one-click with [Vercel](https://vercel.com). You'll need to have your environment variables ready.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/leerob/hasura-nextjs-ssr)
