@@ -11,6 +11,9 @@ This example uses [Hasura](https://hasura.io/), [Next.js](https://nextjs.org/), 
 1. Optional: [Secure your API endpoint.](https://hasura.io/docs/1.0/graphql/manual/deployment/securing-graphql-endpoint.html)
    ![image](https://user-images.githubusercontent.com/9113740/89105407-76f61900-d3e6-11ea-9f5e-d989515154a7.png)
 
+## Open in VScode online
+click the dot button.
+
 ## Running Locally
 
 1. Install dependencies by running `yarn` or `npm install`.
